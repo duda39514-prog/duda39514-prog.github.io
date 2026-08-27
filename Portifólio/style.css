@@ -1,0 +1,330 @@
+*{margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: url(ARCADECLASSIC.TTF) format('Truetype');
+
+}
+
+
+
+body {
+
+    font-family: 'ArcadeClassic', sans-serif;
+
+    background-image: url('stefanie-grunwald-20181018-fischmarkt-animated-full.gif');
+
+    color: rgb(249, 252, 89)
+
+}
+
+
+
+/*Cabeçalho*/
+
+header {
+
+    background-image: url('https://i.pinimg.com/originals/87/59/23/875923454f7944ced93c4e3605566e0f.gif');
+
+    background-color: rgb(241, 235, 112);
+
+    text-align: center;
+
+    padding: 20px 0;
+
+}
+
+
+
+header h1 {
+
+    margin-bottom: 8px;
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+nav ul li {
+
+    display: inline;
+
+    margin: 0 10px
+
+}
+
+
+
+nav ul li a {
+
+    color: rgb(213, 195, 58);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+nav ul li a:hover {
+
+    color: rgb(39, 114, 179);
+
+    cursor: pionter;
+
+}
+section {
+    padding: 25px;
+    margin: 100px;
+    background-image: url('2005.jpg');
+    background-size: 100% 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.container {
+
+    max-width: 50%;
+
+    margin: 0 auto;
+
+    gap: 16px;
+
+}
+
+
+
+h2 {
+
+    margin-bottom: 16px;
+
+}
+
+
+
+.sobre-mim {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+
+
+.foto-perfil {
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #7292c9
+
+}
+
+
+
+.cards {
+
+    display: flex;
+
+    flex-direction: wrap;
+
+    gap: 16px;
+
+}
+
+
+
+.card {
+
+  background-image: url('2002.jpg');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    
+    padding: 65px 25px 25px 25px;
+    max-width: 650px; 
+    margin: 0 auto 12px auto; 
+    min-height: 90px; /
+    flex: 1 1 200px;
+    min-width: 0;
+    min-height: 80px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 16px;
+
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(248, 255, 157);
+}
+.card h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hobby {
+    display: flex;
+    align-items: center;
+    background: rgb(32, 146, 246);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    gap: 14px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+
+
+.hobby:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 8px 16px rgb(248, 255, 157);
+
+}
+
+
+
+.hobby i {
+
+    font-size: 32px;
+
+    color: black;
+
+}
+
+
+
+#rede-social h2 {
+
+    text-align: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+
+.redes-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    align-items: center;
+
+}
+
+
+
+form {
+
+    gap: 16px;
+
+}
+
+
+
+input,
+
+textarea {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border: 1px solid rgb(22, 57, 87);
+
+    border-radius: 4px;
+
+}
+
+
+
+button {
+
+    background: rgb(32, 146, 246);
+
+    color: black;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease, color 0.3s ease, transform 3s ease-in;
+
+}
+
+
+
+button:hover {
+
+    background: rgb(32, 146, 246);
+
+    color: black;
+
+    transform: rotate(360deg);
+
+}
+
+
+
+footer {
+
+    background: #3333;
+
+    color: rgb(227, 240, 49);
+
+    text-align: center;
+
+    padding: 16px 0;
+
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+
+}

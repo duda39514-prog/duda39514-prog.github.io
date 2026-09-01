@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: url(ARCADECLASSIC.TTF) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ArcadeClassic', sans-serif;
+    background-image: url('stefanie-grunwald-20181018-fischmarkt-animated-full.gif');
+    color: rgb(249, 252, 89);
+}
+
+section {
+    padding: 21px;
+    margin: 30px auto;
+    background: rgb(245, 229, 5);
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;
+}
+.card {
+    background: #1b0872;
+    border-radius: 8px;
+    padding: 70px;
+    width: 100%;
+    min-width: 280px; 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 8px rgb(62, 183, 253);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(108, 220, 228);
+}
+
+
+.imagem-musica {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #f9fc59;
+    border-radius: 6px;
+}
+
+.texto-musica h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.texto-musica h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #f9fc59;
+    margin-bottom: 8px;
+}
+
+.texto-musica p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+}
+.card {
+    position: relative; 
+}
+a.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+   display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 15px;
+}
+
+.card-link .card {
+    cursor: pointer;
+}
+
+.card-link:hover .card {
+    opacity: 0.9;
+}
